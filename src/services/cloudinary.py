@@ -1,5 +1,25 @@
+"""
+Модуль cloudinary.py
+
+Цей модуль конфігурує підключення до сервісу Cloudinary для роботи з мультимедійними файлами.
+
+Використовується для завантаження, оновлення, видалення зображень та інших ресурсів у хмарне сховище Cloudinary.
+
+Налаштування беруться з конфігураційного файлу (через `settings` з src.conf.config).
+
+Приклад:
+--------
+    import cloudinary.uploader
+    result = cloudinary.uploader.upload(file_path)
+
+Змінні середовища, які мають бути задані:
+------------------------------------------
+- CLOUDINARY_NAME
+- CLOUDINARY_API_KEY
+- CLOUDINARY_API_SECRET
+"""
+
 import cloudinary
-import cloudinary.uploader
 
 from src.conf.config import settings
 
